@@ -1,0 +1,165 @@
+body {
+    text-align: center;
+    height: 850px;
+    width: 1200px;
+    border:1px solid black;
+    margin: 20px 500px 50px 400px;
+    padding-top: 50px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 5px;
+    font-family: Apple Chancery;
+    color: #091930;
+
+}
+
+h1 {
+    font-family: inherit;
+    font-size: 70px;
+    margin: 0.2em;
+    color: inherit;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+    font-family: inherit;
+    color: inherit;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+    font-family: inherit;
+    color: inherit;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+
+}
+
+tr {
+    height: 20px;
+    border: 1px solid black;
+
+}
+
+td {
+    width: 20px;
+    border: 1px solid black;
+
+
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+input[type=submit] {
+    width: 5em;
+    font-weight: 600;
+    font-family: inherit;
+    color:inherit;
+}
+
+.errorHeight,
+.errorWidth{
+
+  color: red;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 15px;
+  position: absolute;
+
+
+}
+.errorHeight{
+  transform: translateX(-20px);
+}
+
+.errorWidth{
+  float:inherit;
+  transform: translateX(270px);
+}
+
+.formElement{
+  font-family: inherit;
+  color:inherit;
+  font-weight: 600;
+}
+
+ .tooltipSpan  {
+  height: 40px;
+  Width: 40px;
+  position: relative;
+  right: 200px;
+  border: 1px dotted black;
+  float: left;
+
+
+}
+
+[tooltip] {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transform: translateY(-40px) translateX(-70px);
+
+}
+
+
+[tooltip]:hover:after  {
+    visibility: visible;
+    opacity: 0.7;
+    width: 250px;
+    height: 40px;
+    background-color:#091930;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    top:100%;
+    transform: translateY(-50px) translateX(-520px);
+    font-family: inherit;
+    content: "Please, pick the height and the width of the grid you will draw in"
+
+
+}
+[tooltip]:hover:before {
+    border: solid;
+    border-color: black transparent;
+    border-width: 6px 6px 0 6px;
+    opacity: 0.5;
+    bottom: 20px;
+    content: "";
+    right:270px;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(-90deg) translateY(20px);
+
+
+}
+
+form {
+
+  width: 500px;
+  position: relative;
+  transform: translateY(-50px) translateX(30px);
+}
+
+.gridBuild{
+  width: 600px;
+  height: 100px;
+  border: 1px dotted black;
+  position: relative;
+  transform: translateY(-10px) translateX(300px);
+
+}
